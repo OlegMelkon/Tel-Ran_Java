@@ -1,0 +1,14 @@
+package Homework;
+
+import java.util.Scanner;
+
+public class JavaBasic_05042023 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Please enter integer: ");
+        int num = sc.nextInt();
+        System.out.println("Your number in the decimal system: " + num);
+        System.out.println("Your number in the binary system: " + Integer.toBinaryString(num));
+        sc.close();
+    }
+}
