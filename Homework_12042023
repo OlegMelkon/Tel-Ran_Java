@@ -1,0 +1,17 @@
+package Homework;
+
+public class JavaBasic_12042023 {
+    static char c1 = '0', c2 = '0', c3 = '0';
+
+    public static void main(String[] args) {
+
+        System.out.println("Converting from character to a number");
+
+        System.out.println("1. Converting 0 using (int). The result is " + (int) c1);
+
+        System.out.println("2. Converting 0 using Integer.parseInt(String.valueOf()). The result is " + Integer.parseInt(String.valueOf(c2)));
+
+        System.out.println("3. Converting 0 using Character.getNumericValue(). The result is " + Character.getNumericValue(c3));
+
+    }
+}
