@@ -1,0 +1,41 @@
+package Homework;
+
+import java.util.Scanner;
+
+public class Box {
+    private int width;
+    private int length;
+    private int height;
+    private int vol;
+    public Box(int width, int length, int height){
+        this.width = width;
+        this.length = length;
+        this.height = height;
+        this.vol = width * length * height;
+        }
+
+        public void volume() {
+            System.out.println("Box volume is " + vol);
+        }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter width: ");
+        String w = sc.next();
+        int w1 = Integer.parseInt(String.valueOf(w));
+
+        System.out.print("Enter length: ");
+        String l = sc.next();
+        int l1 = Integer.parseInt(String.valueOf(l));
+
+        System.out.print("Enter height: ");
+        String h = sc.next();
+        int h1 = Integer.parseInt(String.valueOf(h));
+
+        Box BoxVolume = new Box(w1, l1, h1);
+        BoxVolume.volume();
+
+        sc.close();
+    }
+}
