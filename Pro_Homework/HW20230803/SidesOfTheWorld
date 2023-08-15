@@ -1,0 +1,26 @@
+package de.telran.Melkonov.Oleg;
+
+public enum SidesOfTheWorld {
+    SOUTH(50),
+    NORTH(0),
+    WEST(30),
+    EAST(25);
+
+    private int temperature;
+    SidesOfTheWorld(int temperature) {
+        this.temperature = temperature;
+    }
+
+    public String toString() {
+        return name() + " temperature = " + temperature;
+    }
+
+    public static void main(String[] args) {
+        for (SidesOfTheWorld value : SidesOfTheWorld.values()){
+            System.out.println(value);
+        }
+
+        System.out.println(String.valueOf(SOUTH));
+        
+    }
+}
